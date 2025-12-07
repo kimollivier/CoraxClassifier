@@ -1,0 +1,17 @@
+
+[general]
+name=Corax Image/Video Inspector
+description=Inspect images and videos linked to point features, edit species data, navigate records, and manage media efficiently.
+version=3.0
+qgisMinimumVersion=3.0
+author=Kim Ollivier
+email=kim@example.com
+homepage=https://github.com/kimollivier/corax-image-video-inspector
+tracker=https://github.com/kimollivier/corax-image-video-inspector/issues
+repository=https://github.com/kimollivier/corax-image-video-inspector
+tags=image, video, species, media, QGIS
+category=Data Management
+changelog=Version 3.0: Auto-load first layer, debug prints, status bar added, grouped buttons, slideshow interval set to 2s.
+icon=icon.png
+experimental=False
+deprecated=False
