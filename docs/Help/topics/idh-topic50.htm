@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html id="hs-topic-p">
+<head>
+<title>Installation</title>
+<meta charset="windows-1252" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="HelpSmith 8.4 (Build 20.825)" />
+<style type="text/css" media="screen">
+html {
+  height: 100%;
+}
+body {
+  background-color: #f0f3f7;
+  margin: 12px 0 12px 0;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="../css/topics/style.css" />
+<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../js/settings.js?1fd415fd"></script>
+<script type="text/javascript" src="../js/core.min.js?e72569b7"></script>
+<script type="text/javascript" src="../js/topic.min.js?e72569b7"></script>
+<script type="text/javascript">
+	var topicContext = 50;
+</script>
+<!-- Web Help Topic -->
+</head>
+<body>
+<div>
+  <table class="align-c tbl0">
+    <tr class="row0">
+      <td class="cell0">
+        <p>&nbsp;</p>
+      </td>
+      <td class="cell1">
+        <div>
+          <table class="align-c tbl1">
+            <tr class="row0">
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell1">
+                <div>
+                  <table class="align-c tbl2">
+                    <tr class="row0">
+                      <td class="cell0">
+                        <p class="ps0"><span class="ts0">Navigation: &lt;Root level&gt;</span></p>
+                        <p class="ps1"><span class="ts1">Installation</span></p>
+                      </td>
+                      <td class="cell1">
+                        <p class="ps2"><a href="idh-topic40.htm" title="TrapNZ Camera Monitoring Stations"><img width="32" height="32" alt="" src="images/navigation%20links/previous%20bluetriangles32.png" /></a><a href="idh-topic70.htm" title="Operation"><img width="32" height="32" alt="" src="images/navigation%20links/next%20bluetriangles32.png" /></a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="row0">
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell2">
+                <p class="ps3"><span class="ts2">&nbsp;</span></p>
+                <p><span class="ts4">Installation Requirements</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p><span class="ts7">Hardware</span></p>
+                <p class="ps7"><span class="ts3">A personal computer that can run QGIS. It can be Windows, Linux or Apple.</span></p>
+                <p class="ps7"><span class="ts3">Maps and QGIS are very visual. I recommend using a </span><span class="ts8">computer mouse</span><span class="ts3">&nbsp;in preference to a trackpad.</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p><span class="ts7">QGIS</span></p>
+                <p class="ps7"><span class="ts3">Install </span><a href="https://qgis.org/download/" target="_blank" class="hs2">QGIS</a><span class="ts3">&nbsp;version 3.40.12-Bratislava long term release or other 3.4x versions.</span></p>
+                <p class="ps7"><span class="ts12">&nbsp;</span></p>
+                <p><span class="ts7">Computer Vision </span></p>
+                <p class="ps7"><span class="ts3">To view the images and videos we need some external applications. There will be some default applications installed that will open if the file types are recognised. These may not be as useful as some other programs.</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">Optionally install </span><span class="ts9">OpenCV2</span><span class="ts3">&nbsp;to enable first frame preview of videos.</span></p>
+                <p class="ps7"><span class="ts3">From the OSGeo4w shell: </span><span class="ts12">python -m pip install opencv-python-headless</span></p>
+                <p class="ps7"><span class="ts12">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">The Classifier APP can preview still images but an extra python package called CV2 is required to preview the first frame of each videos If CV2 is not installed then video previews will be disabled.</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">I prefer to view still images using </span><span class="ts8">IrfanView</span><span class="ts3">&nbsp;and videos using </span><span class="ts8">VLC</span><span class="ts3">. Both of these are free and are very capable of editing the images and videos. </span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p><span class="ts7">CoraxClassifier Plugin</span></p>
+                <p class="ps7"><span class="ts3">Download the Corax Classifier zipped package. This is a QGIS plugin. </span></p>
+                <p class="ps7"><span class="ts3">It needs a camera sites layer, catalog template and species lookup table.</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps7"><a href="https://github.com/kimollivier/CoraxClassifier" class="hs2">https://github.com/kimollivier/CoraxClassifier</a></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">Create a QGIS project and add the required layers. They must be called </span><span class="ts9">image_classification </span><span class="ts3">and </span><span class="ts9">camera_loc </span><span class="ts3">because they are hard coded. This may change, the template may be built-in. For flexibility the </span><span class="ts9">camera_loc</span><span class="ts3">&nbsp;and </span><span class="ts9">bird_pest_lut</span><span class="ts3">&nbsp;will be external to the plugin, stored in a geopackage. A sample package with all the files and a project can be downloaded.</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">The plugin is a zip file that can be </span><a href="https://github.com/kimollivier/CoraxClassifier/blob/main/CoraxImageVideoInspector.zip" target="_blank" class="hs2">downloaded</a><span class="ts3">.</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">A sample project file, templates in a geopackage can be </span><a href="https://github.com/kimollivier/CoraxClassifier/blob/main/classifier_template.zip" class="hs2">downloaded</a></p>
+                <p class="ps7"><span class="ts13">&nbsp;</span></p>
+                <p class="ps7"><span class="ts3">You should have a folder structure like this:</span></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps8"><img width="485" height="211" alt="" src="images/image(10).png" /></p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps10"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">This project is called BandedRailMonitoring (I avoid spaces in all folder and file names)</span></p>
+                <p class="ps10"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">Each reserve has a folder</span></p>
+                <p class="ps10"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">Within each reserve there are folder for each downloaded memory card which must start with the camera-id and date exactly like that.</span></p>
+                <p class="ps10"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">There are two geopackages (*.gpkg), one for the camera locations and another for the classifier templates. The camera locations must be points in the classifier.gpkg</span></p>
+                <p class="ps10"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">There is a QGIS project (*.qgz) that will run the classifier</span></p>
+                <p class="ps10"><span style="font-size: 14pt; line-height: 0; vertical-align: middle; color: Black">&bull;</span><span style="display: inline-block; width: 18px"></span><span class="ts3">The CoraxClassifier plugin to be loaded is the zip file (</span><span class="ts14">old name in image</span><span class="ts3">)</span></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p class="ps7"><span class="ts3">&nbsp;</span></p>
+                <p class="ps3"><span class="ts2">&nbsp;</span></p>
+              </td>
+              <td class="cell0">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+            <tr class="row0">
+              <td class="cell3">
+                <p>&nbsp;</p>
+              </td>
+              <td class="cell4">
+                <p class="ps6"><span class="ts5">Copyright &copy; 2025 kimo</span></p>
+              </td>
+              <td class="cell5">
+                <p>&nbsp;</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td class="cell0">
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
