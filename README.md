@@ -9,4 +9,4 @@ Copyright Creative Commons 4.0 New Zealand
 The latest plugin is now called CoraxClassifier.zip. This includes the help, image loader and the plugin for QGIS.
 
 Kim Ollivier
-kimollivie1@gmail.com
+kimollivier1@gmail.com
